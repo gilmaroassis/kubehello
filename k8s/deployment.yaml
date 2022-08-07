@@ -5,7 +5,7 @@ metadata:
       app: kube-hello
     name: kube-hello
 spec:
-  replicas: 4
+  replicas: 20
   selector:
     matchLabels:
       app: kube-hello
@@ -15,7 +15,6 @@ spec:
         app: kube-hello
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: "80" 
         prometheus.io/path: "/metrics"
     spec:
       containers:
