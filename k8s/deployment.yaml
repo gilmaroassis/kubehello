@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
     labels:
@@ -22,7 +22,7 @@ spec:
           image: gilmaroassis/kube-hello:latest
 
 ---
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   labels:
